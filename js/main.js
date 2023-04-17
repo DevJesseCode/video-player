@@ -5,6 +5,9 @@ const changeSource = function () {
     if (url.includes("youtube.com/watch?v=")) {
         url = url.replace("watch?v=", "embed/");
     }
+    if (!url.includes("http://") && !url.includes("https://")) {
+        url = `https://${url}`;
+    }
     videoElement.setAttribute("src", url);
 };
 
