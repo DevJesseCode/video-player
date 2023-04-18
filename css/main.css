@@ -6,11 +6,12 @@
 
 body {
     background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    margin: 0px 5px 0px 5px;
     height: 100vh;
 }
 
 main {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 #videoPlayer {
@@ -25,10 +26,10 @@ main {
 }
 
 #playButton {
-    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 4px 0px #000000;
     border-radius: 15px;
     width: 70px;
-    height: 30px;
+    height: 28px;
     color: #444;
     border: none;
     font-family: inherit;
@@ -37,5 +38,21 @@ main {
     font-weight: 400;
     transition: all 0.2s;
     background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
+}
+
+#playButton:active {
+    transform: translateY(3px);
+    box-shadow: none;
+    transition-duration: 100ms;
+}
+
+#attribution {
+    background-color: white;
+    text-decoration: none;
+    padding: 3px 0px 3px 5px;
+    width: 380px;
+}
+
+#attribution > a {
+    text-decoration: inherit;
 }
